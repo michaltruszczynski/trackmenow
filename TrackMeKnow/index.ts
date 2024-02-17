@@ -3,7 +3,7 @@ import Geolocation from "./Geolocation";
 import GoogleMap from "./GoogleMap";
 import Controls from "./Controlls";
 import ErrorMessageField from "./ErrorMsgField";
-import { isDomContentLoadedCheck, isWindowCheck } from "../../utility";
+import { isDomContentLoadedCheck, isWindowCheck, detectIfMobile } from "../../utility";
 
 import MarkerController from "./MarkerController/index";
 import { TPosition, TTrackMe } from "./types";
@@ -63,7 +63,7 @@ class TrackMe implements TTrackMe {
 
     private checkAppEnviromentRequirements() {
         try {
-            // detectIfMobile();
+            detectIfMobile();
             this.geolocation.isGeolocationAPISupported();
         } catch (error) {
             this.isMobileDeviceAndGeolocationApiAvailable = false;
