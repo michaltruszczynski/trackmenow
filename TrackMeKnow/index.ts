@@ -63,7 +63,7 @@ class TrackMe implements TTrackMe {
 
     private checkAppEnviromentRequirements() {
         try {
-            detectIfMobile();
+            // detectIfMobile();
             this.geolocation.isGeolocationAPISupported();
         } catch (error) {
             this.isMobileDeviceAndGeolocationApiAvailable = false;
