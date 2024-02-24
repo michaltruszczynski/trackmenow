@@ -9,11 +9,20 @@ export type TPosition = {
 class MapElement {
     private googleMapContainer: PageHTMLElement<'div'>;
     constructor() {
+        // lub dajemy jako konstructor
         this.googleMapContainer = new PageHTMLElement('div', { ui: { className: 'map-container' } });
     }
 
     displayMarkers(position: TPosition) {
 
+    }
+
+    initializeMap() {
+
+    }
+
+    centerMap() {
+        
     }
 }
 
