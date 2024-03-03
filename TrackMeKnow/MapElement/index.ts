@@ -24,6 +24,10 @@ class MapElement {
     centerMap() {
         
     }
+
+    startMap() {
+        
+    }
 }
 
 export default MapElement;
