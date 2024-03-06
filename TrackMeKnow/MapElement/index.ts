@@ -28,6 +28,10 @@ class MapElement {
     startMap() {
         
     }
+
+    getMap() {
+        
+    }
 }
 
 export default MapElement;
