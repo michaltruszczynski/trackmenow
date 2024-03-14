@@ -18,7 +18,7 @@ class MapElement {
     }
 
     initializeMap() {
-
+        const map = null;
     }
 
     centerMap() {
@@ -32,6 +32,8 @@ class MapElement {
     getMap() {
         
     }
+
+
 }
 
 export default MapElement;
